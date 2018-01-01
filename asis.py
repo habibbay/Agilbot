@@ -6,56 +6,55 @@ from datetime import datetime
 import time,random,sys,json,codecs,threading,glob,re,os,subprocess
 
 cl = LINETCR.LINE() #1
-cl.login(token="End0fJv6SusVzvJz0fVe.bOTC2IBDL8BwdKUZ4SkftG.NWeQ06+N0T2DQiLbolAHJFYiIhVXnCsVu+WATodKG0g=")
+cl.login(token="EnL6uqkdL5vGAzJe9fAa.zQSghcJqOX9okB7XRV/hoG.wXIj6haPPx0mZIduCaoBT2ZOKLHgKtI7qzCSgzK14J4=")
 cl.loginResult()
 
 ki = LINETCR.LINE() #2
-ki.login(token="EnL6uqkdL5vGAzJe9fAa.zQSghcJqOX9okB7XRV/hoG.wXIj6haPPx0mZIduCaoBT2ZOKLHgKtI7qzCSgzK14J4=")
+ki.login(token="Enbf9LQcNDSbdDOjeLJ7.iKT6G/SOx222zSniZvVdjW.9SI/YtphMixDw8h7fyib/ibHcyz4UR6i9RCr8kBkLKU=")
 ki.loginResult()
 
 kk = LINETCR.LINE() #3
-kk.login(token="EnCugJDE9UmG3Tx4cxe5.Jzp7mX9sKs1Ksb+V4dt+Tq.M/5FQ2BVRLci21F+5kJJcuklPsbljJEiGNeExLJ2rIc=")
+kk.login(token="EnwFXavA9wzb59Rigcm7.nsfhzJDwpznnILRB7xbZnW.9Z2C2vJGLc2RlozFBQ2NR6/Tee7yvi3PRQj+SDJ0PKM=")
 kk.loginResult()
 
 kc = LINETCR.LINE() #4
-kc.login(token="EnDT9Iq2CZUa84QGktAf.OEkOkzOgvZEfjTXt6IvAlW.K85ozCox1Ts7uL4q+otPc0aF7JffwnVJX9555ZkRCZQ=")
+kc.login(token="En6hxphShQ6m3GcTGMX6.Szf5xl0Y9zJqZvEXuVXrrG.LlchfxWIHncARPGG9sH6LC/wrY94oo8jZMtOZsG6JM0=")
 kc.loginResult()
 
 ks = LINETCR.LINE() #5
-ks.login(token="Enbf9LQcNDSbdDOjeLJ7.iKT6G/SOx222zSniZvVdjW.9SI/YtphMixDw8h7fyib/ibHcyz4UR6i9RCr8kBkLKU=")
+ks.login(token="EnIy5lGAFyJ9n5gdbNWe.CBkLPIwBAB+jIkfPjHHZBG.K5kaCZAaGZemv+yIDGO6WREJ77+ntZD+x3wgL1N6NxE=")
 ks.loginResult()
 
-print "login success"
+print "login success Gil.. pergunakan bot dngn sebaik-baik nya, jangan nakal-nakal ya! Bieb ciluk"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
 helpMessage ="""Protect now
-Owner : ✰Bieb ciluk✰
+Owner : [=AGIL BOT=]
 -==================-
-◄]·♦·Menu For Public·♦·[►
-[•]Adminlist
-[•]Ownerlist
-[•]Info Group
-[•]Welcome
-[•]Creator
-[•]Bot
-◄]·♦·Menu For Admin·♦·[►
+[=Menu For Public=]
+ 
+ • Ownerlist
+ • Info Group
+ • Welcome
+ • Creator
+ • Bot
+[=Menu For Admin=]
 -==================-
-[•]Cancel
-[•]「Buka/Tutup」qr
-[•]Mid Bot
-[•]Speed/Sp
-[•]「Cctv/Ciduk」
-[•]Status/Set
-[•]Gurl
-[•]Jam「On/Off」
-[•]Tag all/Tagall
-[•]Absen/Respon
-[•]Banlist
->>[Perintah Proteksi]<<
-👑Hanya Untuk Owner👑
+ • Cancel
+ • 「Buka/Tutup」qr
+ • Mid Bot
+ • Speed/Sp
+ • 「Cek/Cctv」
+ • Status/Set
+ • Gurl
+ • Jam「On/Off」
+ • Tag all/Tagall
+ • Absen/Respon
+ • Banlist
+
 -==================-
-  == CILUK BOT ==
+  == AGIL BOT ==
 -==================-
 """
 KAC=[cl,ki,kk,kc,ks]
@@ -76,8 +75,8 @@ Cmid = kc.getProfile().mid #4
 Dmid = ks.getProfile().mid #5
 
 Bots=[mid,Amid,Bmid,Cmid,Dmid]
-admin=["u4843bca56f19fd29c1ad040f7fdd80dc","uu6c73876821feaef60e5ed7a2909f4952","u033e3506ae38d47224ada63497dcc837"] 
-owner=["u4843bca56f19fd29c1ad040f7fdd80dc","uu6c73876821feaef60e5ed7a2909f4952","u033e3506ae38d47224ada63497dcc837"]
+admin=["u4843bca56f19fd29c1ad040f7fdd80dc"] 
+owner=["u4843bca56f19fd29c1ad040f7fdd80dc"]
 whitelist=[""]
 wait = {
     'contact':False,
@@ -742,7 +741,7 @@ def bot(op):
                     else:
                         cl.sendText(msg.to, "Kelebihan batas :v")
     #-----------------=Selesai=------------------
-            elif msg.text in ["Bot?"]: #Ngirim Semua Kontak Bot
+            elif msg.text in ["Send contact"]: #Ngirim Semua Kontak Bot
               if msg.from_ in admin:
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': mid}
@@ -1362,7 +1361,7 @@ def bot(op):
                 if wait["autoAdd"] == True: md+="[•]Auto Add [On]\n"
                 else:md+="[•]Auto Add [Off]\n"
                 if wait["commentOn"] == True: md+="[•]Comment [On]\n"
-                else:md+="[•]Comment [Off]\n*============*\n⭐CILUK BOT⭐\n*============*"
+                else:md+="[•]Comment [Off]\n*============*\n⭐By Bieb⭐\n*============*"
                 cl.sendText(msg.to,md)
             elif "album merit " in msg.text:
                 gid = msg.text.replace("album merit ","")
@@ -1648,7 +1647,7 @@ def bot(op):
                     kc.sendText(msg.to,"Aktifkan jam terlebih dulu")
         #-------------Fungsi Jam Update Finish-------------------#
 
-            elif msg.text == "Cctv":
+            elif msg.text == "Cek":
               if msg.from_ in admin:
                 cl.sendText(msg.to, "Command Received...")
                 try:
@@ -1663,7 +1662,7 @@ def bot(op):
                 wait2['ROM'][msg.to] = {}
                 #print wait2
               
-            elif msg.text == "Kena":
+            elif msg.text == "Cctv":
                  if msg.from_ in admin:
                     if msg.to in wait2['readPoint']:
                         if wait2["ROM"][msg.to].items() == []:
@@ -1674,9 +1673,9 @@ def bot(op):
                                 #print rom
                                 chiya += rom[1] + "\n"
 
-                        cl.sendText(msg.to, "||Di Read Oleh||%s\n||By : Ciluk BOT||\n\n>Pelaku CCTV<\n%s-=CCTV=-\n•Bintitan\n•Panuan\n•Kurapan\n•Kudisan\n\nAmiin Ya Allah\n[%s]" % (wait2['readMember'][msg.to],chiya,setTime[msg.to]))
+                        cl.sendText(msg.to, "||Di Read Oleh||%s\n||By : Bieb ciluk||\n\n>Pelaku CCTV<\n%s-=CCTV=-\nJangan cuma cctv aja\nGue doain Bintitan lu\n\nAmin ya Allah\n[%s]" % (wait2['readMember'][msg.to],chiya,setTime[msg.to]))
                     else:
-                        cl.sendText(msg.to, "Ketik Cctv dulu Bieb\nBaru Ketik Ciduk\nDASAR PIKUN ♪")
+                        cl.sendText(msg.to, "Ketik Cek dulu Gil\nBaru Ketik Cctv\nDASAR PIKUN ♪")
 #-----------------------------------------------
 
 #-----------------------------------------------
@@ -1757,16 +1756,16 @@ def bot(op):
     #----------------------Fungsi Join Group Finish---------------#
 
     #-------------Fungsi Leave Group Start---------------#
-            elif msg.text in ["Bubar","Kabur all","Kaboor all"]: #Bot Ninggalin Group termasuk Bot Induk
+            elif msg.text in ["Bubar","Out all"]: #Bot Ninggalin Group termasuk Bot Induk
               if msg.from_ in admin:
                 if msg.toType == 2:
                     ginfo = cl.getGroup(msg.to)
                     try:
-                        ki.leaveGroup(msg.to,"Good bye all \(`• w •')/ ")
-                        kk.leaveGroup(msg.to,"Good bye all \(`• w -')/ ")
-                        kc.leaveGroup(msg.to,"Good bye all \(`• 3 •')/ ")
-                        ks.leaveGroup(msg.to,"Good bye all \(`• w *')/ ")
-                        cl.leaveGroup(msg.to,"Good bye all \<`• w •'>/ \nAssalamualaikum ")
+                        ki.leaveGroup(msg.to)
+                        kk.leaveGroup(msg.to)
+                        kc.leaveGroup(msg.to)
+                        ks.leaveGroup(msg.to)
+                        cl.leaveGroup(msg.to)
                     except:
                         pass
             
@@ -1775,10 +1774,10 @@ def bot(op):
                 if msg.toType == 2:
                     ginfo = cl.getGroup(msg.to)
                     try:
-                        ki.leaveGroup(msg.to,"Good bye \(`• w •')/ ")
-                        kk.leaveGroup(msg.to,"Good bye \(`• w -')/ ")
-                        kc.leaveGroup(msg.to,"Good bye \(`• w *')/ ")
-                        ks.leaveGroup(msg.to,"Good bye \(`• 3 -')/ ")
+                        ki.leaveGroup(msg.to)
+                        kk.leaveGroup(msg.to)
+                        kc.leaveGroup(msg.to)
+                        ks.leaveGroup(msg.to)
                         #cl.leaveGroup(msg.to)
                     except:
                         pass
@@ -1900,7 +1899,7 @@ def bot(op):
                             pass
         #----------------Fungsi Banned Kick Target Finish----------------------#                
 
-            elif "Ready op" in msg.text:
+            elif "Kick all" in msg.text:
               if msg.from_ in owner:
                 if msg.toType == 2:
                     print "ok"
@@ -2185,7 +2184,7 @@ def bot(op):
                 kk.sendText(msg.to,"Responsename....")
                 kc.sendText(msg.to,"Responsename.....")
                 ks.sendText(msg.to,"Responsename......")
-                cl.sendText(msg.to,"Ready Protect in your group")
+                cl.sendText(msg.to,"Bot complete..Ready Protect in your group")
       #-------------Fungsi Respon Finish---------------------#
                             
 
@@ -2230,7 +2229,7 @@ def bot(op):
                 
       #-------------Fungsi Chat ----------------
             elif msg.text in ["Woy","woy","Woi","woi","bot","Bot"]:
-                 quote = ['ya kaka (`^ w ^)']
+                 quote = ['Save your Group....']
                  psn = random.choice(quote)
                  cl.sendText(msg.to,psn)
             
