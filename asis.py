@@ -75,8 +75,8 @@ Cmid = kc.getProfile().mid #4
 Dmid = ks.getProfile().mid #5
 
 Bots=[mid,Amid,Bmid,Cmid,Dmid]
-admin=["u4843bca56f19fd29c1ad040f7fdd80dc"] 
-owner=["u4843bca56f19fd29c1ad040f7fdd80dc"]
+admin=["u4843bca56f19fd29c1ad040f7fdd80dc","u6b6ab8d07a8b5fd5a69d1ed400c76421"] 
+owner=["u4843bca56f19fd29c1ad040f7fdd80dc","u6b6ab8d07a8b5fd5a69d1ed400c76421"]
 whitelist=[""]
 wait = {
     'contact':False,
