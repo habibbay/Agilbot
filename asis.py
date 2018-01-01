@@ -45,7 +45,7 @@ Owner : [=AGIL BOT=]
  • 「Buka/Tutup」qr
  • Mid Bot
  • Speed/Sp
- • 「Cek/Cctv」
+ • 「Cek/Read point」
  • Status/Set
  • Gurl
  • Jam「On/Off」
