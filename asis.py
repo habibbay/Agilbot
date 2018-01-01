@@ -1662,7 +1662,7 @@ def bot(op):
                 wait2['ROM'][msg.to] = {}
                 #print wait2
               
-            elif msg.text == "Cctv":
+            elif msg.text == "Read point":
                  if msg.from_ in admin:
                     if msg.to in wait2['readPoint']:
                         if wait2["ROM"][msg.to].items() == []:
@@ -1675,7 +1675,7 @@ def bot(op):
 
                         cl.sendText(msg.to, "||Di Read Oleh||%s\n||By : Bieb ciluk||\n\n>Pelaku CCTV<\n%s-=CCTV=-\nJangan cuma cctv aja\nGue doain Bintitan lu\n\nAmin ya Allah\n[%s]" % (wait2['readMember'][msg.to],chiya,setTime[msg.to]))
                     else:
-                        cl.sendText(msg.to, "Ketik Cek dulu Gil\nBaru Ketik Cctv\nDASAR PIKUN ♪")
+                        cl.sendText(msg.to, "Ketik Cek dulu Gil\nBaru Ketik Read point\nDASAR PIKUN ♪")
 #-----------------------------------------------
 
 #-----------------------------------------------
